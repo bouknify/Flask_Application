@@ -1,7 +1,7 @@
 # Flask_Application - TensorFlow Serving with Docker
 In this project, we will deploy a Pre-trained TensorFlow model with the help of TensorFlow Serving with Docker, and we will also create a visual web interface using Flask web framework which will serve to get predictions from the served TensorFlow model and help end-users to consume through API calls. 
 
-The model is entirely based on the official Tensorflow Regression tutorial notebook available here: https://www.tensorflow.org/tutorials/keras/regression.
+The model is entirely based on the official Tensorflow Regression tutorial notebook available [here](https://www.tensorflow.org/tutorials/keras/regression).
 This model predicts the fuel efficiency of late -1970s and early 1980s automobiles. The model is based on Tensorflow and stored in the Tensorflow
 [SavedModel format](https://github.com/bouknify/Flask_Application/tree/main/dnn/1).
 The input features used for this model are attributes of the cars. The output of the model is a single float value.
