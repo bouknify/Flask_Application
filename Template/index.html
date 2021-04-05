@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>MPG API Prediction</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+      <div class="form-style-9">
+        <h3>Prediction of the fuel efficiency of late -1970s and early 1980s automobiles.</h3>
+      </div>
+      <form class="form-style-9" action="{{ url_for('index') }}" method="post" enctype="multipart/form-data">
+        <ul>
+          <li>
+              <input type="text" name="Cylinders" class="field-style field-split align-left" placeholder="Cylinders" required="required" />
+              <input type="text" name="Displacement" class="field-style field-split align-right" placeholder="Displacement" required="required" />
+          </li>
+          <li>
+              <input type="text" name="Horsepower" class="field-style field-split align-left" placeholder="Horsepower" required="required" />
+              <input type="text" name="Weight" class="field-style field-split align-right" placeholder="Weight" required="required" /> 
+          </li>
+          <li>
+              <input type="text" name="Acceleration" class="field-style field-split align-left" placeholder="Acceleration" required="required" />
+              <input type="text" name="Model Year" class="field-style field-split align-right" placeholder="Model Year" required="required" />
+          </li>
+          <li>
+              <select name="Origin" class="field-style field-split align-left" required>
+                <option value="" disabled selected hidden>Please Choose the Origin...</option>
+                <option value="Europe">Europe</option>
+                <option value="Japan">Japan</option>
+                <option value="USA">USA</option>
+            </select>
+            <input type="submit" class="field-style field-split align-right" value="Start Prediction" />
+          </li>
+          </ul>
+      </form>
+  </body>
+</html>
