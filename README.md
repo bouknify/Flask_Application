@@ -19,11 +19,11 @@ $ cd Flask_Application
 
 2. Create and start containers:
 
-If you inspect docker-compose.yml you can see that:
+If you inspect [docker-compose.yml](https://github.com/bouknify/Flask_Application/blob/main/docker-compose.yml) you can see that:
 
-    a. The Tensorflow Serving image is obtained from its public docker hub store (image: tensorflow/serving:2.4.0).
+The Tensorflow Serving image is obtained from its public docker hub store (image: tensorflow/serving:2.4.0).
 
-    b. The dnn_service image is defined by the Dockerfile. It's the Containerised Python Web Application (Flask Framework).
+The dnn_service image is defined by the [Dockerfile](https://github.com/bouknify/Flask_Application/blob/main/Dockerfile) . It's the Containerised Python Web Application (Flask Framework).
 
 And now we can simply run both services together with:  
 ```sh
